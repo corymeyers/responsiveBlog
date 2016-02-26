@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+@mixin navUl {
+  display: block;
+  margin-top: 0px;
+  padding: 0;
+  border-bottom: 0.5px solid $grey;
+  width: 100%;
+}
+
+@mixin subCardpStyle {
+  @media screen and #{$breakMedium} {
+    height: 100px;
+  }
+
+  &:nth-child(2){
+    font-size: 1em;
+    margin: 5px 10px;
+    height: 100%;
+    @include span-columns(8 of 12);
+  }
+
+  &:last-child{
+    @include span-columns(12 of 12);
+      @media screen and #{$breakMedium} {
+        @include span-columns(8 of 12);
+        margin-left:10px;
+      }
+    font-size: 0.75em;
+    margin: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+}
+
+@mixin subCardImgStyle {
+  width: 100%;
+  @include span-columns(3.5 of 12);
+  &:hover {
+    opacity: 0.7;
+  }
+}
