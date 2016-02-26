@@ -390,6 +390,9 @@ body {
 #container {
   margin: 15px; }
 
+#featureCard img, #adSpace #leadAd {
+  width: 100%; }
+
 #featureCard {
   background-color: #F0F0F0;
   float: left;
@@ -423,20 +426,18 @@ body {
     font-size: 0.5em;
     color: #9AB691;
     margin-bottom: -10px; }
-  #featureCard img {
-    width: 100%; }
-    #featureCard img:hover {
-      opacity: 0.7; }
-    @media screen and (min-width: 1100px) {
-      #featureCard img {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 74.41059%; }
-        #featureCard img:last-child {
-          margin-right: 0; } }
+  #featureCard img:hover {
+    opacity: 0.7; }
+  @media screen and (min-width: 1100px) {
+    #featureCard img {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 74.41059%; }
+      #featureCard img:last-child {
+        margin-right: 0; } }
 
-#subFeatures {
+#comments {
   background-color: #F0F0F0;
   float: left;
   display: block;
@@ -444,30 +445,29 @@ body {
   width: 100%;
   margin-top: 20px;
   padding: 20px; }
-  #subFeatures:last-child {
+  #comments:last-child {
     margin-right: 0; }
-  #subFeatures h5 {
+  #comments h5 {
     color: #424053;
-    border-bottom: 2px solid #B2BA9A;
-    margin-top: 10px;
-    margin-bottom: 30px; }
-  #subFeatures #subCard {
-    border-bottom: 2pt solid #9AB691;
+    margin-top: 10px; }
+  #comments #subCard {
+    border-bottom: 1pt solid #9AB691;
     clear: both; }
-    #subFeatures #subCard img {
+    #comments #subCard img {
       width: 100%;
+      margin-top: 11px;
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 27.49666%; }
-      #subFeatures #subCard img:last-child {
+      #comments #subCard img:last-child {
         margin-right: 0; }
-      #subFeatures #subCard img:hover {
+      #comments #subCard img:hover {
         opacity: 0.7; }
     @media screen and (min-width: 980px) {
-      #subFeatures #subCard p {
+      #comments #subCard p {
         height: 100px; } }
-    #subFeatures #subCard p:nth-child(2) {
+    #comments #subCard p:nth-child(2) {
       font-size: 1em;
       margin: 5px 10px;
       height: 100%;
@@ -475,9 +475,9 @@ body {
       display: block;
       margin-right: 2.35765%;
       width: 65.88078%; }
-      #subFeatures #subCard p:nth-child(2):last-child {
+      #comments #subCard p:nth-child(2):last-child {
         margin-right: 0; }
-    #subFeatures #subCard p:last-child {
+    #comments #subCard p:last-child {
       float: left;
       display: block;
       margin-right: 2.35765%;
@@ -486,39 +486,57 @@ body {
       margin: 0;
       margin-bottom: 15px;
       padding-bottom: 10px; }
-      #subFeatures #subCard p:last-child:last-child {
+      #comments #subCard p:last-child:last-child {
         margin-right: 0; }
       @media screen and (min-width: 980px) {
-        #subFeatures #subCard p:last-child {
+        #comments #subCard p:last-child {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 65.88078%;
           margin-left: 10px; }
-          #subFeatures #subCard p:last-child:last-child {
+          #comments #subCard p:last-child:last-child {
             margin-right: 0; } }
   @media screen and (min-width: 980px) {
-    #subFeatures {
+    #comments {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 61.61588%; }
-      #subFeatures:last-child {
+      width: 61.61588%;
+      float: left; }
+      #comments:last-child {
         margin-right: 0; } }
 
 #adSpace {
   background-color: #F0F0F0;
-  padding: 20px; }
+  padding: 20px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 20px;
+  max-width: 1000px; }
+  #adSpace:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 980px) {
+    #adSpace {
+      width: 350px; } }
   #adSpace img {
-    width: 100%;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 27.49666%; }
-    #adSpace img:last-child {
-      margin-right: 0; }
-    #adSpace img:hover {
-      opacity: 0.7; }
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table-cell; }
+  #adSpace p {
+    color: #B2BA9A;
+    margin: 0;
+    font-size: 0.7em; }
+  #adSpace #subAds {
+    background-color: #F0F0F0; }
+    #adSpace #subAds img {
+      width: 135px;
+      float: left;
+      margin: 10px;
+      display: table-cell; }
 
 /**
  * Basic typography style for copy text
@@ -589,8 +607,13 @@ body {
   padding: 0;
   border-bottom: 0.5px solid #8F8C8F;
   width: 100%;
-  background-color: #424053;
-  margin: 0; }
+  margin: 0;
+  background-color: #9AB691;
+  background-image: -webkit-linear-gradient(#9AB691, #424053);
+  background-image: linear-gradient(#9AB691, #424053);
+  background-color: #9AB691;
+  background-image: -webkit-linear-gradient(-320deg, #9AB691 0%, #424053 100%);
+  background-image: linear-gradient(50deg,#9AB691 0%, #424053 100%); }
   @media screen and (min-width: 980px) {
     #topNav {
       height: 125px; } }
@@ -607,13 +630,6 @@ body {
       #topNav h1 {
         font-size: 60px;
         margin-top: 35px; } }
-  #topNav img {
-    height: 35px;
-    width: 35px;
-    border: 1.5px solid #8F8C8F;
-    border-radius: 50px;
-    float: left;
-    margin: 4px; }
 
 #bottomNav {
   height: 35px;

@@ -9,8 +9,9 @@
 #topNav {
   height:55px;
   @include navUl;
-  background-color: $slate;
   margin: 0;
+  @include linear-gradient($dkgreen, $slate);
+  @include linear-gradient(50deg, $dkgreen 0%, $slate 100%);
 
   @media screen and #{$breakMedium} {
     height: 125px;
@@ -30,15 +31,6 @@
       font-size: 60px;
       margin-top: 35px;
     }
-  }
-
-  img {
-    height: 35px;
-    width: 35px;
-    border: 1.5px solid $grey;
-    border-radius: 50px;
-    float: left;
-    margin: 4px;
   }
 }
 

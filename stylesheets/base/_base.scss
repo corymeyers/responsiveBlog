@@ -40,6 +40,10 @@ body {
   margin: 15px;
 }
 
+%img {
+  width: 100%;
+}
+
 #featureCard {
  background-color: $white;
  @include span-columns(12 of 12);
@@ -76,7 +80,7 @@ body {
     }
 
  img {
-   width: 100%;
+   @extend %img;
 
    &:hover {
      opacity: 0.7;
@@ -84,28 +88,26 @@ body {
     @media screen and #{$breakLarge} {
       @include span-columns(9 of 12);
     }
-
  }
 }
 
-#subFeatures {
+#comments {
 background-color: $white;
 @include span-columns(12 of 12);
-margin-top: $cardpad;
+margin-top: 20px;
 padding: $cardpad;
 
   h5 {
     color: $slate;
-    border-bottom: 2px solid $ltgreen;
+    // border-bottom: 2px solid $ltgreen;
     margin-top: 10px;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
 
   #subCard {
-    border-bottom: 2pt solid $dkgreen;
-    // padding-bottom: 200px;
-
+    border-bottom: 1pt solid $dkgreen;
     clear: both;
+
     img {
       @include subCardImgStyle;
     }
@@ -117,14 +119,47 @@ padding: $cardpad;
 
   @media screen and #{$breakMedium} {
     @include span-columns(7.5 of 12);
+    float: left;
   }
 }
 
 #adSpace {
   background-color: $white;
   padding: $cardpad;
+  @include span-columns(12 of 12);
+  margin-top: 20px;
+  max-width: 1000px;
+
+    @media screen and #{$breakMedium} {
+      width: 350px;
+    }
 
   img {
-    @include subCardImgStyle;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display:table-cell;
   }
+
+  p {
+    color: $ltgreen;
+    margin: 0;
+    font-size: 0.7em;
+  }
+
+  #leadAd {
+    @extend %img;
+  }
+
+  #subAds {
+    background-color: $white;
+
+    img {
+      width: 135px;
+      float: left;
+      margin: 10px;
+      display:table-cell;
+    }
+  }
+
 }
