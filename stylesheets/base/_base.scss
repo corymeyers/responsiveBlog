@@ -52,7 +52,7 @@ body {
  color: $slate;
 
  @media screen and #{$breakMedium} {
-   @include span-columns(7.5 of 12);
+   @include span-columns(12 of 12);
  }
 
   p {
@@ -98,23 +98,24 @@ margin-top: 20px;
 padding: $cardpad;
 
   h5 {
-    color: $slate;
-    // border-bottom: 2px solid $ltgreen;
+    color: $dkgreen;
     margin-top: 10px;
-    // margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   #subCard {
-    border-bottom: 1pt solid $dkgreen;
+    border: 1pt solid $dkgreen;
     clear: both;
 
     img {
       @include subCardImgStyle;
+      margin-bottom: 10px;
     }
-
+  
     p {
       @include subCardpStyle;
-    }
+
+      }
   }
 
   @media screen and #{$breakMedium} {
@@ -131,7 +132,7 @@ padding: $cardpad;
   max-width: 1000px;
 
     @media screen and #{$breakMedium} {
-      width: 350px;
+      width: 343px;
     }
 
   img {
@@ -155,7 +156,7 @@ padding: $cardpad;
     background-color: $white;
 
     img {
-      width: 135px;
+      width: 130px;
       float: left;
       margin: 10px;
       display:table-cell;

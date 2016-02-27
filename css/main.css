@@ -404,12 +404,12 @@ body {
   color: #424053; }
   #featureCard:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 980px) {
+  @media screen and (min-width: 1000px) {
     #featureCard {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 61.61588%; }
+      width: 100%; }
       #featureCard:last-child {
         margin-right: 0; } }
   #featureCard p:first-child {
@@ -448,10 +448,11 @@ body {
   #comments:last-child {
     margin-right: 0; }
   #comments h5 {
-    color: #424053;
-    margin-top: 10px; }
+    color: #9AB691;
+    margin-top: 10px;
+    margin-bottom: 10px; }
   #comments #subCard {
-    border-bottom: 1pt solid #9AB691;
+    border: 1pt solid #9AB691;
     clear: both; }
     #comments #subCard img {
       width: 100%;
@@ -459,12 +460,13 @@ body {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 27.49666%; }
+      width: 27.49666%;
+      margin-bottom: 10px; }
       #comments #subCard img:last-child {
         margin-right: 0; }
       #comments #subCard img:hover {
         opacity: 0.7; }
-    @media screen and (min-width: 980px) {
+    @media screen and (min-width: 1000px) {
       #comments #subCard p {
         height: 100px; } }
     #comments #subCard p:nth-child(2) {
@@ -481,14 +483,13 @@ body {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 100%;
+      width: 65.88078%;
       font-size: 0.75em;
-      margin: 0;
-      margin-bottom: 15px;
+      margin: 5px 10px;
       padding-bottom: 10px; }
       #comments #subCard p:last-child:last-child {
         margin-right: 0; }
-      @media screen and (min-width: 980px) {
+      @media screen and (min-width: 1000px) {
         #comments #subCard p:last-child {
           float: left;
           display: block;
@@ -497,7 +498,7 @@ body {
           margin-left: 10px; }
           #comments #subCard p:last-child:last-child {
             margin-right: 0; } }
-  @media screen and (min-width: 980px) {
+  @media screen and (min-width: 1000px) {
     #comments {
       float: left;
       display: block;
@@ -518,9 +519,9 @@ body {
   max-width: 1000px; }
   #adSpace:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 980px) {
+  @media screen and (min-width: 1000px) {
     #adSpace {
-      width: 350px; } }
+      width: 343px; } }
   #adSpace img {
     max-width: 250px;
     margin-left: auto;
@@ -533,7 +534,7 @@ body {
   #adSpace #subAds {
     background-color: #F0F0F0; }
     #adSpace #subAds img {
-      width: 135px;
+      width: 130px;
       float: left;
       margin: 10px;
       display: table-cell; }
@@ -614,7 +615,7 @@ body {
   background-color: #9AB691;
   background-image: -webkit-linear-gradient(-320deg, #9AB691 0%, #424053 100%);
   background-image: linear-gradient(50deg,#9AB691 0%, #424053 100%); }
-  @media screen and (min-width: 980px) {
+  @media screen and (min-width: 1000px) {
     #topNav {
       height: 125px; } }
   #topNav h1 {
@@ -626,7 +627,7 @@ body {
     margin-top: -3px;
     margin-right: 11px;
     position: relative; }
-    @media screen and (min-width: 980px) {
+    @media screen and (min-width: 1000px) {
       #topNav h1 {
         font-size: 60px;
         margin-top: 35px; } }

@@ -53,14 +53,13 @@
   }
 
   &:last-child{
-    @include span-columns(12 of 12);
+    @include span-columns(8 of 12);
       @media screen and #{$breakMedium} {
         @include span-columns(8 of 12);
         margin-left:10px;
       }
     font-size: 0.75em;
-    margin: 0;
-    margin-bottom: 15px;
+    margin: 5px 10px;
     padding-bottom: 10px;
   }
 }
